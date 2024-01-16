@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IzinApp.Pages.HomePage"
+             Title="Çalışan Girişi"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Border StrokeShape="RoundRectangle 30"
+                    StrokeThickness="0"
+                    BackgroundColor="Red"
+                    VerticalOptions="Center"
+                    Padding="50"
+                    Margin="20,200,20,40">
+                <StackLayout>
+                    <Label Text="Çalışan Girişi" FontSize="30" HorizontalOptions="CenterAndExpand" Margin="0,20,0,20"/>
+                    <Entry Placeholder="Adı" x:Name="txtAdi"/>
+                    <Entry Placeholder="Soyadı" x:Name="txtSoyadi"/>
+                    <Entry Placeholder="Email" x:Name="txtEmail"/>
+                    <Entry Placeholder="Departman" x:Name="txtDepartman"/>
+                </StackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

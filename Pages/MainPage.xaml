@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IzinApp.Pages.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="Auto, *, Auto">
+
+        
+
+        <Label Grid.Row="0"
+               Text=""
+               TextColor="WhiteSmoke"
+               FontSize="50"
+               HorizontalOptions="Center"
+
+               FontAttributes="Bold"/>
+
+        <Image Grid.Row="1"
+               Source="amblem.png"/>
+
+        <VerticalStackLayout Grid.Row="2" VerticalOptions="EndAndExpand" Margin="50,40,50,50">
+
+            <Border StrokeShape="RoundRectangle 55"
+                    StrokeThickness="0"
+                    HeightRequest="70"
+
+                    BackgroundColor="Red">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+
+
+                    </TapGestureRecognizer>
+
+                </Border.GestureRecognizers>
+
+                <Label Text="GİRİŞ"
+                       FontSize="40"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       TextColor="WhiteSmoke"/>
+                
+
+
+            </Border> 
+
+
+
+        </VerticalStackLayout>
+
+
+    </Grid>
+ 
+
+</ContentPage>
+
